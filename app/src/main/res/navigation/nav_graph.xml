@@ -12,6 +12,12 @@
         tools:layout="@layout/splash_fragment" />
 
     <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.tempic_practice.presentation.register.RegisterFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/register_fragment" />
+
+    <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.tempic_practice.presentation.home.HomeFragment"
         android:label="home_fragment"
