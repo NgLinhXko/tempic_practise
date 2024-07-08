@@ -4,5 +4,21 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
     <string name="register">Đăng ký</string>
-    <string name="title_register">Temptic, mọi điều về review mỹ phẩm! Rất vui được gặp bạn: D</string>
+    <string name="title_register">Temptic, mọi điều về review mỹ phẩm!\n Rất vui được gặp bạn: D</string>
+    <string name="start_text">Temptic, mọi điều về review mỹ phẩm!</string>
+    <string name="register_with_phone_number">Đăng ký bằng số điện thoại di động của bạn</string>
+    <string name="register_with_kakao">Đăng ký KakaoTalk</string>
+    <string name="register_with_naver">Đăng ký làm thành viên với Naver ID</string>
+    <string name="register_with_google">Đăng ký bằng ID Google của bạn</string>
+    <string name="have_account">Bạn đã có sẵn tài khoản?</string>
+    <string name="login">Đăng nhập</string>
+    <string name="your_name">Họ tên của bạn (Tiếng Hàn/Anh, ít nhất 2-10 ký tự)</string>
+    <string name="your_phone">Số điện thoại di động của bạn</string>
+    <string name="send_code">Gửi mã xác nhận</string>
+    <string name="time">02:59</string>
+    <string name="enter_otp">Nhập mã số xác nhận</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="re_pass">Nhập lại mật khẩu để xác nhận</string>
+    <string name="law_register">Bằng cách tiếp tục, bạn xác nhận rằng bạn đồng ý với Điều khoản sử dụng của Temtic và đã đọc Chính sách quyền riêng tư của chúng tôi để xác định cách chúng tôi thu thập, sử dụng và chia sẻ dữ liệu của bạn.</string>
+    <string name="check_agree">Đồng ý nhận thông tin tiếp thị (tùy chọn)</string>
 </resources>

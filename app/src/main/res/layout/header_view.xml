@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frlHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHeaderRight"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end|center"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        android:visibility="invisible" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/notosan_medium"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingHorizontal="24dp"
+        android:text="@string/register"
+        android:textColor="@color/header_color"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHeaderLeft"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="start|center"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back"
+        android:visibility="invisible" />
+</FrameLayout>
