@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registerWithPhoneFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -28,5 +28,10 @@
         android:name="com.example.tempic_practice.presentation.home.HomeFragment"
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/agreeSaveInfoFragment"
+        android:name="com.example.tempic_practice.presentation.register.RegisterAgreeSaveInfo"
+        android:label="agree_save_info"
+        tools:layout="@layout/register_agree_save_info" />
 
 </navigation>

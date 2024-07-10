@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.example.tempic_practice.presentation.widget.header.HeaderView
+            android:id="@+id/hvComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ic_hv_left="@drawable/ic_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text_header="@string/register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hvComplete">
+
+            <com.example.tempic_practice.presentation.widget.leftrightview.LeftRightView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:font_center="@font/notosan_semibold"
+                app:ic_left="@drawable/ic_tick_around"
+                app:text_center="@string/complete_register" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCompleteCongratulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/congratulation_comp_register" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/shape_corner_4_blue_bg"
+                android:backgroundTint="?actionBarItemBackground"
+                android:fontFamily="@font/notosan_bold"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCompleteBackHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_corner_4_white_bg_stroke_1_blue"
+                android:backgroundTint="?actionBarItemBackground"
+                android:fontFamily="@font/notosan_bold"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_main"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

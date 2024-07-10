@@ -3,6 +3,7 @@
     <declare-styleable name="LeftRightView">
         <attr name="ic_left" format="reference" />
         <attr name="text_center" format="string" />
+        <attr name="font_center" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="HeaderView">

@@ -28,9 +28,9 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.tvTitleRegister.setSpannableText(
-            text = getStringApp(context, R.string.title_register),
-            lengthStart = getStringApp(context, R.string.start_text).length,
-            lengthAll = getStringApp(context, R.string.title_register).length,
+            text = getStringApp(stringResId = R.string.title_register).toString(),
+            lengthStart = getStringApp(stringResId = R.string.start_text).toString().length,
+            lengthAll = getStringApp(stringResId = R.string.title_register).toString().length,
             fontStart = Typeface.BOLD
         )
     }
