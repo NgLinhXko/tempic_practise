@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/registerWithPhoneFragment">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -14,8 +14,14 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.tempic_practice.presentation.register.RegisterFragment"
-        android:label="login_fragment"
+        android:label="register_fragment"
         tools:layout="@layout/register_fragment" />
+
+    <fragment
+        android:id="@+id/registerWithPhoneFragment"
+        android:name="com.example.tempic_practice.presentation.register.RegisterWithPhoneNumber"
+        android:label="register_phone_fragment"
+        tools:layout="@layout/register_with_phone_layout" />
 
     <fragment
         android:id="@+id/homeFragment"

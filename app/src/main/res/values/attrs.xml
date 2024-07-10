@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LeftRightView">
+        <attr name="ic_left" format="reference" />
+        <attr name="text_center" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="HeaderView">
+        <attr name="text_header" format="string" />
+        <attr name="ic_hv_left" format="reference" />
+        <attr name="ic_hv_right" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextView">
+        <attr name="text_content" format="string" />
+        <attr name="hint_text" format="string" />
+        <attr name="text_right" format="string" />
+        <attr name="text_button" format="string" />
+        <attr name="margin_right_content" format="dimension" />
+        <attr name="focus_bg_drawable" format="reference" />
+        <attr name="un_focus_bg_drawable" format="reference" />
+    </declare-styleable>
+
+</resources>
