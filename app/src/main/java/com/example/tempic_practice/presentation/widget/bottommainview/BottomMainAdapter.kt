@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.tempic_practice.R
@@ -17,12 +18,15 @@ class BottomMainAdapter : Adapter<BottomMainAdapter.BottomMainViewHolder>() {
 
     inner class BottomMainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var ivBottomMainIcon: AppCompatImageView? = null
+        private var constBottomMain: ConstraintLayout? = null
 
         init {
+            constBottomMain = itemView.findViewById(R.id.constBottomMain)
             ivBottomMainIcon = itemView.findViewById(R.id.ivBottomMainItmIcon)
-            ivBottomMainIcon?.setOnClickListener {
+            constBottomMain?.setOnClickListener {
                 lBottomMain[adapterPosition].isSelected = !lBottomMain[adapterPosition].isSelected
                 notifyDataSetChanged()
+
             }
         }
 

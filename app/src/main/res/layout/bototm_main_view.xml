@@ -3,13 +3,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:paddingVertical="15dp"
-    android:layout_height="wrap_content">
+    android:layout_height="?actionBarSize"
+    android:paddingVertical="15dp">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvBottomMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
