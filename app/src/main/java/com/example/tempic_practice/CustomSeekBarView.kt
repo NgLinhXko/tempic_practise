@@ -63,9 +63,11 @@ class TimeSeekBar @JvmOverloads constructor(
 
     // Convert time string (hh:mm:ss) to milliseconds
     private fun timeToMillis(time: String): Long {
-        val format = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
-        val date = format.parse(time)
-        return date?.time ?: 0
+        val parts = time.split(":")
+        val hours = parts[0].toLong() * 3600000 // 1 hour = 3600000 ms
+        val minutes = parts[1].toLong() * 60000 // 1 minute = 60000 ms
+        val seconds = parts[2].toLong() * 1000 // 1 second = 1000 ms
+        return hours + minutes + seconds
     }
 
     // Convert milliseconds to time string (hh:mm:ss)
